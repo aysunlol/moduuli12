@@ -11,7 +11,7 @@ def hae_vitsi():
             json_vastaus = vastaus.json()
             print(json_vastaus["value"])
         else:
-            print("Vitsin hakeminen epäonnistui. Statuskoodi:", vastaus.status_code)
+            print("Vitsin hakeminen epäonnistui.")
 
     except requests.exceptions.RequestException as e:
         print("Vitsin hakeminen epäonnistui:", e)
